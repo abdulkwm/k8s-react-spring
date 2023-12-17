@@ -1,0 +1,6 @@
+com/example/k8s/Employee.class
+com/example/k8s/K8sApplication.class
+com/example/k8s/EmployeeController.class
+com/example/k8s/EmployeeRepository.class
+com/example/k8s/EmployeeNotFoundException.class
+com/example/k8s/CorsConfig.class
