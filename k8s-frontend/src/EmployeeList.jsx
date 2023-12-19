@@ -1,12 +1,12 @@
 import axios from "axios";
 import { useState, useEffect } from "react"
-const baseURL = "http://localhost:8080/"
+const baseURL = "http://localhost:8080/api/employees"
 const EmployeeList = () => {
     const [employees, setEmployees] = useState([]);
     useEffect(() => {
         const fetchEmployees = async () => {
             try {
-                const response = await axios.get(process.env.REACT_APP_API_URL + "/api/employees" || baseURL);
+                const response = await axios.get(baseURL || process.env.React_APP_URL);
                 setEmployees(response.data);
             } catch (error) {
                 console.error("error fetching employees", error);

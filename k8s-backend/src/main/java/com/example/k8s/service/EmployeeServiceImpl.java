@@ -4,11 +4,11 @@ import com.example.k8s.entity.Employee;
 import com.example.k8s.exception.EmployeeNotFoundException;
 import com.example.k8s.repository.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@RestController
+@Service
 public class EmployeeServiceImpl implements EmployeeService {
     @Autowired
     private EmployeeRepository employeeRepo;

@@ -18,9 +18,18 @@ public class K8sApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        Employee employee1 = new Employee(1,"abdu","ab@gmail.com");
-        Employee employee2 = new Employee(2,"sekina","se@gmail.com");
-        Employee employee3 = new Employee(3,"zakir","za@gmail.com");
+        Employee employee1 = Employee.builder()
+                .name("Abdu")
+                .email("abdu2gmail.com")
+                .build();
+        Employee employee2 = Employee.builder()
+                .name("Zakir")
+                .email("zakir@gmail.com")
+                .build();
+        Employee employee3 = Employee.builder()
+                .name("Sekina")
+                .email("sekina@gmail.com")
+                .build();
         employeeRepository.save(employee1);
         employeeRepository.save(employee2);
         employeeRepository.save(employee3);
