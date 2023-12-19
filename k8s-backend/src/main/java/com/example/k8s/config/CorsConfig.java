@@ -1,4 +1,4 @@
-package com.example.k8s;
+package com.example.k8s.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;

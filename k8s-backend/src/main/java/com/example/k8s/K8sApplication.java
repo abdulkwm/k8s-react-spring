@@ -1,5 +1,7 @@
 package com.example.k8s;
 
+import com.example.k8s.entity.Employee;
+import com.example.k8s.repository.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
